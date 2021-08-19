@@ -1,1 +1,9 @@
+from serial import Serial
 
+with Serial() as ser:
+    ser.baudrate = 19200
+    ser.port = 'COM7'
+    ser.open()
+    while True:
+        line = ser.readline()
+        print(line.decode('utf-8') .strip('\r\n'))
