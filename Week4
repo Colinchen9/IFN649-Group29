@@ -2,7 +2,7 @@ from serial import Serial
 
 with Serial() as ser:
     ser.baudrate = 19200
-    ser.port = 'COM7'
+    ser.port = 'COM4'
     ser.open()
     while True:
         line = ser.readline()
