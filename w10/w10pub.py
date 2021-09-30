@@ -24,14 +24,14 @@ def readFromServer():
     print("real_time_temperature: " + real_time_temperature)
     print("real_time_humidity: " + real_time_humidity)
     
-    publish.single(topic="Temperature", payload='realtime-temperature is %s' % real_time_temperature, hostname="3.80.140.95")
+    publish.single(topic="Temperature", payload='realtime-temperature is %s' % real_time_temperature, hostname="localhost")
     
     if int(real_time_temperature) > 20:
         prompt1 = 'high temperature alert, need to cool down'
-        publish.single(topic="Temperature", payload='analytic information: %s' % prompt1, hostname="3.80.140.95")
+        publish.single(topic="Temperature", payload='analytic information: %s' % prompt1, hostname="localhost")
 
     if int(real_time_humidity) < 50%:
         prompt2 = 'too dry need some water'
-        publish.single(topic="Humidity", payload='analytic information: %s' % prompt2, hostname="3.80.140.95")
+        publish.single(topic="Humidity", payload='analytic information: %s' % prompt2, hostname="localhost")
         
     time.sleep(6)
