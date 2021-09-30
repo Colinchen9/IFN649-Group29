@@ -62,7 +62,7 @@ class MQTTClient:
         self.mClient.loop_stop(True)
 
 def main():
-    host = "3.80.140.95"
+    host = "localhost"
     
     client1 = MQTTClient(host, TemperatureTopic(), 1)
     #thread1 = Thread(target=client1.start())
