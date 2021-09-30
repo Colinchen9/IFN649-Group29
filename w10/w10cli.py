@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 import time
 from abc import abstractmethod
-from threading import Thread
+#from threading import Thread
 
 class ITopic
     def getTopic(self):
