@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Greenhouse Console|Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+<style>
+  .myheader {
+    background: url(image/bg.jpeg);
+    background-size:100% 100%;
+  }
+  
+/* 列后面清除浮动 */
+.py-5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 底部样式 */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Greenhouse Console</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">My account</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="wholedata.html">Intro</a>
+            <a class="dropdown-item" href="tem.html">Data</a>
+          </div>
+        </li>
+      </ul>
+      
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+   
+<div class="myheader text-dark text-center py-5">
+        <h1 class="display-3 mb-3">Greenhouse Environmental</h1>
+        <a href="wholedata.html" target="_blank" class="btn btn-primary btn-lg">Introduction</a>
+        <a href="https://raw.githubusercontent.com/Colinchen9/IFN649-Group29/main/Project.csv?token=ATVPADBGHBU4DFDJ3C2AQ3DBOZDXK" target="_blank" class="btn btn-danger btn-lg">Data Set</a>
+</div>
+</header>
+
+<main>
+<section class="py-5">
+    <h2 class="text-center mb-5">Functions Show-room</h2>
+    <div class="container">
+      <div class="card" style="width: 17rem; float: left;">
+        <a href="wholedata.html"><img src="image/P1.jpeg" class="card-img-top" alt=""></a>    
+        <div class="card-body">
+          <h5 class="card-title">01.Introduction about greenhouse</h5>
+          <a href="wholedata.html" class="btn btn-primary">View Details</a>
+        
+        </div>
+      </div>
+      <div class="card" style="width: 17rem; float: left;">
+        <img src="image/P2.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">02.Example soil_moisture data</h5>
+          <a href="soil.html" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+      <div class="card" style="width: 17rem; float: left;">
+        <img src="image/P4.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">03.Example air_temperature data</h5>
+         
+          <a href="airT.html" class="btn btn-primary">View Details</a>
+         
+        </div>
+      </div>
+      <div class="card" style="width: 17rem; float: left; ">
+        <img src="image/P3.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">04.Example air_humidity data</h5>
+          
+          <a href="airH.html" class="btn btn-primary">View Details</a>
+       
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="footer">
+  <p>Copyright @IFN649 G-29 Greenhouse Console.com||All designed by G-29</p>
+</div>
+
+
+</body>
+</html>
